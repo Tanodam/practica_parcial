@@ -7,9 +7,10 @@ export class Pelicula {
  cantidadPublico:number;
  fotoPelicula = 'https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg';
  nombreActor:string = "ActorX";
+ paisOrigen:string = "Argentina";
 
  
- constructor(id:number, nombre:string,tipo:string,fechaEstreno:string, cantidadPublico:number, fotoPelicula:string, nombreActor:string)
+ constructor(id:number, nombre:string,tipo:string,fechaEstreno:string, cantidadPublico:number, fotoPelicula:string, nombreActor:string, paisOrigen:string)
  {
      this.id = id;
      this.nombre = nombre;
@@ -20,9 +21,13 @@ export class Pelicula {
      {
          this.fotoPelicula = fotoPelicula;
      }
-     if(this.nombreActor != null)
+     if(nombreActor != null)
      {
          this.nombreActor = nombreActor;
+     }
+     if(paisOrigen != null)
+     {
+         this.paisOrigen = paisOrigen;
      }
  }
 

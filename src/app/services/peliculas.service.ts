@@ -10,10 +10,10 @@ export class PeliculasService {
 
 
     this.peliculas = [
-      new Pelicula(1,'Pelicula1','terror','26/04/1995',350,'https://assets.show.news/__export/1569122473417/sites/debate/img/2019/09/21/1_13_crop1569122444535.jpg_943222218.jpg',null),
-      new Pelicula(2,'Pelicula2','comedia','27/04/2000',250,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgWSpa6zNZlmEjtV2fqHrJYGKCchlD5WL72dZmH_B9zMc5ykXD&usqp=CAU',null),
-      new Pelicula(3,'Pelicula3','amor','28/04/2001',1000,'https://kaliyugadistro.cl/wp-content/uploads/2019/01/somos-normandie-mil-peliculas-360x360.jpg',null),
-      new Pelicula(4,'Pelicula4','otros','29/04/2010',300,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUnDoQXiQJqOnL6aEYq4c3KLiF0Gs87tDgqvpgixoHYF1lstmU&usqp=CAU',null),
+      new Pelicula(1,'Pelicula1','terror','26/04/1995',350,'https://img.vixdata.io/pd/jpg-large/es/sites/default/files/a/aladdin-_pelicula.jpg',null,null),
+      new Pelicula(2,'Pelicula2','comedia','27/04/2000',250,'https://img.vixdata.io/pd/webp-large/es/sites/default/files/poster-pelicula_1.jpg',null,null),
+      new Pelicula(3,'Pelicula3','amor','28/04/2001',1000,'https://img.vixdata.io/pd/webp-large/es/sites/default/files/poster-pelicula_1.jpg',null,null),
+      new Pelicula(4,'Pelicula4','otros','29/04/2010',300,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUnDoQXiQJqOnL6aEYq4c3KLiF0Gs87tDgqvpgixoHYF1lstmU&usqp=CAU',null,null),
     ]
     localStorage.setItem('peliculas',JSON.stringify(this.peliculas));
 

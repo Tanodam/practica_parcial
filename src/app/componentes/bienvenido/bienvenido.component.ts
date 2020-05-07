@@ -31,7 +31,9 @@ export class BienvenidoComponent implements OnInit {
       case 'altaPelicula':
         this.router.navigate(['peliculas/alta']);
       break;
-
+      case 'altaActor':
+        this.router.navigate(['actor/alta']);
+      break;
     }
   }
 

@@ -23,7 +23,7 @@ export class PeliculaAltaComponent implements OnInit {
     this.actores = this.actoresService.obtenerActores();
   }
   alta() {
-    let pelicula = new Pelicula(this.peliculasService.obtenerId(),this.nombre,this.tipo,this.fechaEstreno.toString(), this.cantPublico,null, this.nombreActor + " " + this.apellidoActor);
+    let pelicula = new Pelicula(this.peliculasService.obtenerId(),this.nombre,this.tipo,this.fechaEstreno.toString(), this.cantPublico,null, this.nombreActor + " " + this.apellidoActor,null);
     this.peliculasService.altaPelicula(pelicula);
   }
   obtenerActor(actor){

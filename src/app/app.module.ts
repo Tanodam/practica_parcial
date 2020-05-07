@@ -13,6 +13,10 @@ import { TablaPeliculaComponent } from './componentes/tabla-pelicula/tabla-pelic
 import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle-pelicula.component';
 import { TablaActorComponent } from './componentes/tabla-actor/tabla-actor.component';
 import { FormsModule } from '@angular/forms';
+import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
+import { PaisesListadoComponent } from './componentes/paises-listado/paises-listado.component';
+import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +28,16 @@ import { FormsModule } from '@angular/forms';
     PeliculaListadoComponent,
     TablaPeliculaComponent,
     DetallePeliculaComponent,
-    TablaActorComponent
+    TablaActorComponent,
+    CabeceraComponent,
+    PaisesListadoComponent,
+    TablaPaisesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

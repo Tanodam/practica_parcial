@@ -1,5 +1,4 @@
-<button [routerLink]="['/']" >Volver Bienvenido</button>
-
+<app-cabecera></app-cabecera>
 
 <h1>Alta Peliculas</h1>
 <br>
@@ -23,23 +22,7 @@
         <label for="nomrbePelicula">Tipo</label>
         <input [ngModelOptions]="{standalone: true}" [(ngModel)]="tipo" type="text" class="form-control" id="nomrbePelicula" placeholder="Ingrese el nombre de la pelicula">
       </div>
-    <!-- <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="chkAmor">
-      <label class="form-check-label" for="chkAmor">Amor</label>
-      <br>
-
-      <input type="checkbox" class="form-check-input" id="chkTerror">
-      <label class="form-check-label" for="chkTerror">Terror</label>
-      <br>
-
-      <input type="checkbox" class="form-check-input" id="chkComedia">
-      <label class="form-check-label" for="chkComedia">Comedia</label>
-      <br>
-
-      <input type="checkbox" class="form-check-input" id="chkOtros">
-      <label class="form-check-label" for="chkOtros">Otros</label>
-      <br>
-    </div> -->
+      
     <button type="button" (click)="alta()" class="btn btn-primary">Submit</button>
   </form>
   <br>
