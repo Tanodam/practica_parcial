@@ -1,0 +1,6 @@
+<button [routerLink]="['/']" >Volver Bienvenido</button>
+
+<h1>Listado Peliculas</h1>
+
+<app-tabla-pelicula (peliculaSeleccionada)="enviarPeliculaSeleccionada($event)" [peliculas]="this.peliculas" ></app-tabla-pelicula>
+<app-detalle-pelicula (eliminarPelicula)="eliminar($event)" [detallePelicula]="this.peliculaSeleccionada"> </app-detalle-pelicula>
