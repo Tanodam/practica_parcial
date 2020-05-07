@@ -34,6 +34,10 @@ export class BienvenidoComponent implements OnInit {
       case 'altaActor':
         this.router.navigate(['actor/alta']);
       break;
+      case 'paisesListado':
+        this.router.navigate(['paises/listado']);
+      break;
+      
     }
   }
 

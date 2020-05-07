@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tabla-paises',
@@ -7,9 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TablaPaisesComponent implements OnInit {
   @Input() paises;
+  @Output() paisSeleccionado = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  verDetalles( pais ){
+    this.paisSeleccionado.emit(pais);
   }
 
 }

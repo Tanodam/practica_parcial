@@ -17,6 +17,7 @@ import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { PaisesListadoComponent } from './componentes/paises-listado/paises-listado.component';
 import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetallePaisComponent } from './componentes/detalle-pais/detalle-pais.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     CabeceraComponent,
     PaisesListadoComponent,
     TablaPaisesComponent,
+    DetallePaisComponent,
   ],
   imports: [
     BrowserModule,

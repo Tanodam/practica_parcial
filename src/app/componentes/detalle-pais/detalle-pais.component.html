@@ -1,0 +1,21 @@
+<!-- 
+<div  *ngIf="detallePais" class="card" style="width: 18rem;">
+    <img [src]="this.detallePais.flag" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">{{detallePais.nombre}}</h2>
+      <p class="card-text">Capital: {{detallePais.capital}}</p>
+      <p class="card-text">Poblacion: {{detallePais.poblacion}}</p>      
+    </div>
+  </div> -->
+
+  <div *ngIf="detallePais" class="container">
+    <div class="row m-5 justify-content-center">
+      <div class="card text-white bg-dark mb-3"style="width: 18rem;">
+        <img [src]="this.detallePais.flag" class="card-img-top" alt="...">
+
+        <h2 class="card-title">{{detallePais.nombre}}</h2>
+        <p class="card-text">Capital: {{detallePais.capital}}</p>
+        <p class="card-text">Poblacion: {{detallePais.population}}</p>     
+      </div>
+    </div>
+  </div>

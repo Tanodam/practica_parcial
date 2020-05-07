@@ -1,5 +1,4 @@
-<p>tabla-paises works!</p>
-  
+
 <table class="table table-striped table-bordered table-hover">
     <thead class="thead-dark">
       <tr>
@@ -10,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let pais of paises" >
+        <tr *ngFor="let pais of paises" (click)="verDetalles(pais)" >
             <th>{{pais.name}}</th>
             <th>{{pais.capital}}</th>
             <th>{{pais.population}}</th>

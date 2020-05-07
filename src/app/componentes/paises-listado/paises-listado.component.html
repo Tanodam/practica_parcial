@@ -1,1 +1,4 @@
+<app-cabecera></app-cabecera>
+<app-tabla-paises (paisSeleccionado)="enviarPaisSeleccionado($event)" [paises]="this.paises" ></app-tabla-paises>
+<app-detalle-pais [detallePais]="this.paisSeleccionado"> </app-detalle-pais>
 
