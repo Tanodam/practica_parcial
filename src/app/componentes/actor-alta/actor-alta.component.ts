@@ -14,7 +14,7 @@ export class ActorAltaComponent implements OnInit {
   fechaNacimiento:string;
   apellido:string;
   sexo:string;
-
+  pais;
   constructor(private paisesService:PaisesService, private actorService : ActoresService) {
    }
 
@@ -23,8 +23,14 @@ export class ActorAltaComponent implements OnInit {
   }
 
   alta() {
-    let actor = new Actor(this.actorService.obtenerId(), this.nombre, this.apellido, this.sexo,this.fechaNacimiento,null);
+    let actor = new Actor(this.actorService.obtenerId(), this.nombre, this.apellido, this.sexo,this.fechaNacimiento,null, this.pais.name);
     this.actorService.altaActor(actor);
+  }
+
+  seleccionoPais(pais){
+
+    this.pais = pais;
+    console.log(this.pais);
   }
 
 }
