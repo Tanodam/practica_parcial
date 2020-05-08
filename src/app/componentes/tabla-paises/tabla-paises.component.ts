@@ -13,7 +13,7 @@ export class TablaPaisesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  verDetalles( pais ){
+  verDetalles(pais){
     this.paisSeleccionado.emit(pais);
   }
 

@@ -12,10 +12,7 @@ export class ActorAltaComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.paisesService.obtenerPaises().subscribe( resp=>{
-      console.log(resp);
-      this.paises = resp;
-    })
+    this.paises = this.paisesService.obtenerPaises();
   }
 
 }

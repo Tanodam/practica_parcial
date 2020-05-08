@@ -8,20 +8,24 @@ import { PaisesService } from '../../services/paises.service';
 export class PaisesListadoComponent implements OnInit {
   paises:any
   @Output() paisSeleccionado   = new EventEmitter();
+  
 
   constructor(private paisesService:PaisesService) {
    }
 
   ngOnInit(): void {
-    this.paisesService.obtenerPaises().subscribe( resp=>{
-      console.log(resp);
-      this.paises = resp;
-    })
+    this.paises = this.paisesService.obtenerPaises();
   }
 
   enviarPaisSeleccionado(event){
     this.paisSeleccionado = event;
  
+  }
+
+  deshabilitarPais(pais){
+    console.log(pais);
+    this.paisesService.deshabilitarPais(pais);
+    // this.paisesService=this.paisesService.obtenerPaises();
   }
 
 
