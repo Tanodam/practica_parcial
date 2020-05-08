@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PaisesService} from '../../services/paises.service';
+import { ActoresService } from '../../services/actores.service'
+import { Actor } from '../../clases/actor'
 
 @Component({
   selector: 'app-actor-alta',
@@ -8,11 +10,21 @@ import { PaisesService} from '../../services/paises.service';
 })
 export class ActorAltaComponent implements OnInit {
   paises:any
-  constructor(private paisesService:PaisesService) {
+  nombre:string;
+  fechaNacimiento:string;
+  apellido:string;
+  sexo:string;
+
+  constructor(private paisesService:PaisesService, private actorService : ActoresService) {
    }
 
   ngOnInit(): void {
     this.paises = this.paisesService.obtenerPaises();
+  }
+
+  alta() {
+    let actor = new Actor(this.actorService.obtenerId(), this.nombre, this.apellido, this.sexo,this.fechaNacimiento,null);
+    this.actorService.altaActor(actor);
   }
 
 }
